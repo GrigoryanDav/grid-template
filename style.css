@@ -1,0 +1,286 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.header {
+    background-color: black;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-title {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li {
+    padding-top: 20px;
+    transition: background-color ease 0.3s;
+    margin-right: 30px;
+}
+
+.navbar a {
+    font-size: 20px;
+}
+
+
+.navbar li:nth-child(1):hover {
+    background-color: #607d8b;
+}
+.navbar li:nth-child(2):hover {
+    background-color:  #009688;
+}
+
+.navbar li:nth-child(3):hover{
+    background-color: #616161;
+}
+
+.navbar li:nth-child(4):hover {
+    background-color: brown;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    align-items: center;
+    background-color: #607d8b;
+    justify-content: space-around;
+}
+
+.about-title {
+    color: white;
+    font-size: 36px;
+}
+
+
+.about-avatar {
+    text-align: center;
+    max-width: 100%;
+}
+
+.about-avatar img {
+    border-radius: 50%;
+    height: auto;
+    max-width: 50%;
+}
+
+.about-description p {
+    color: white;
+}
+
+.my-work-section {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    justify-content: space-around;
+}
+
+.my-work-title {
+    font-size: 36px;
+}
+
+.my-work-subtitle p {
+    font-size: 20px;
+}
+
+
+.my-work-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.my-work-image img {
+    width: 100%;
+}
+
+.resume-section {
+    background-color: #3f51b5;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-title {
+    color: white;
+    font-size: 36px;
+}
+
+.resume-subtitle {
+    color: white;
+}
+
+
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+    text-align: left;
+}
+
+td {
+    display: table-cell;
+    padding: 16px;
+    text-align: left;
+    color: white;
+}
+
+
+.tr1, .tr3, .tr5 {
+    background-color: white;
+}
+
+.tr1 td, .tr3 td, .tr5 td {
+    color: black;
+}
+
+.swing-by-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    background-color: #616161;
+}
+
+.swing-by-title {
+    color: white;
+    font-size: 36px;
+    padding-top: 30px;
+}
+
+.swing-by-information {
+    margin-top:100px;
+}
+
+.swing-by-information p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    background-color: #009688;
+}
+
+.contact-title {
+    font-size: 36px;
+    padding-top: 30px;
+    color: white;
+    text-align: left;
+}
+
+.contact-subtitle {
+    color: white;
+    opacity: 0.7;
+}
+
+.contact-feedback {
+    padding-top: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 70%;
+}
+
+.contact-button {
+    padding: 20px 40px;
+    color: white;
+    background-color: #009688;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    margin-top: 15px;
+    transition: background-color ease 0.3s, color ease 0.3s;
+    margin-left: 63%;
+}
+
+.message-label {
+    margin-left: 5%;
+}
+
+.contact-button:hover {
+    color: black;
+    background-color: #616161;
+}
+
+.footer {
+    background-color: black;
+    padding-top: 10px;
+    grid-column: 1/-1;
+}
+
+.footer p {
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.footer p a {
+    text-decoration: underline;
+}
+
+@media (max-width:600px) {
+    main {
+        grid-template-columns:1fr;
+    }
+}
